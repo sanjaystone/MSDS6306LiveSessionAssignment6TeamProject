@@ -1,4 +1,18 @@
 Data README
 –	A data directory containing files to load in and clean up the data. 
+  - Taken from pages 49-50 of O'Neil and Schutt
+  - http://www1.nyc.gov/site/finance/taxes/property-rolling-sales-data.page
+  - "https://raw.githubusercontent.com/sanjaystone/MSDS6306LiveSessionAssignment6TeamProject/master/Data/rollingsales_bronx.csv"
+  - Installed plyr package.  
+
 –	The clean up should include finding out where there are outliers or missing values, deciding how you will treat them, making sure values you think are numerical are being treated as such (correct R class), etc.
+  - Checked the data
+  - Cleaned/formatted the data with regular expressions
+  - Create a new variable that is a "clean' version of sale.price.
+  - Made all variable names lower case
+  - Got rid of leading digits
+  - Ensure dsale prices are cleaned
+  - Kept only the actual sales, removing data without sale price
+  - Looked at 1-, 2-, and 3-family homes
+  - Removedoutliers that seem like they weren't actual sales
 
