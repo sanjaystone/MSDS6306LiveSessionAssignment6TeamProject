@@ -1,0 +1,49 @@
+---
+title: "Bronx Analysis"
+author: "Alvarado, Cynthia"
+date: "June 22, 2017"
+output:
+  github_document:
+    fig_width: 5
+    fig_height: 5
+    dev: jpeg
+---
+
+
+## Bronx Analysis
+
+Below, we are summarizing statistics on the cleaned up Bronx data.
+
+```{r stats}
+load(file = "D:/DoingDataScience/Assignments/bronx_homes.RData")
+
+#mean and standard deviation of Sale Price
+mean(bronx.homes$sale.price.n)
+sd(bronx.homes$sale.price.n)
+
+#mean and standard deviation of gross square feet
+mean(bronx.homes$gross.sqft)
+sd(bronx.homes$gross.sqft)
+```
+## Histograms
+
+The histograms for both the sales price and the gross square feet gives the following:
+
+```{r hist}
+hist(bronx.homes$sale.price.n)
+hist(bronx.homes$gross.sqft)
+
+#Boxplots
+boxplot(bronx.homes$sale.price.n)
+boxplot(bronx.homes$gross.sqft)
+```
+
+
+## Plots
+
+Plots for Sales Price vs Gross Square Feet:
+
+```{r plot}
+plot(bronx.homes$sale.price.n, bronx.homes$gross.sqft)
+```
+
